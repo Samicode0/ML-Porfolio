@@ -31,3 +31,4 @@ class WeatherFetcher:
 
 my_fetcher = WeatherFetcher()
 my_fetcher.fetch_and_save()
+
