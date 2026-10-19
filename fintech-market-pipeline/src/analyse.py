@@ -20,7 +20,6 @@ class MarketDataAnalyzer:
     def generate_summary(self):
         df = self.fetch_data()
 
-        # Group by crypto symbol and calculate average price and volume
         summary = df.groupby("asset_symbol").agg(
             avg_price=('price_usd', 'mean'),
             max_price=('price_usd', 'max'),
